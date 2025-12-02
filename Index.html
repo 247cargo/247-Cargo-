@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>274 CARGO - Global Logistics Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-r from-primary to-secondary text-white py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Global Logistics <span class="text-yellow-300">Reimagined</span></h1>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Delivering excellence across air, sea, and land with cutting-edge digital solutions</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="/track" class="bg-white text-primary font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Track Shipment</a>
+                    <a href="/quote" class="bg-transparent border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition duration-300">Get a Quote</a>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-20 bg-white/10 backdrop-blur-sm"></div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-8 bg-gray-50 rounded-xl">
+                        <div class="text-primary mb-4">
+                            <i data-feather="globe" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">150+</h3>
+                        <p class="text-gray-600">Countries Served</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl">
+                        <div class="text-primary mb-4">
+                            <i data-feather="package" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">25M+</h3>
+                        <p class="text-gray-600">Annual Shipments</p>
+                    </div>
+                    <div class="p-8 bg-gray-50 rounded-xl">
+                        <div class="text-primary mb-4">
+                            <i data-feather="clock" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">99.7%</h3>
+                        <p class="text-gray-600">On-Time Delivery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Logistics Solutions</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive services tailored to your supply chain needs</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                            <i data-feather="truck" class="w-16 h-16 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Road Freight</h3>
+                            <p class="text-gray-600 mb-4">Reliable domestic and cross-border trucking solutions with real-time tracking.</p>
+                            <a href="/services/road" class="text-primary font-medium flex items-center hover:underline">
+                                Learn more <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
+                            <i data-feather="ship" class="w-16 h-16 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Ocean Freight</h3>
+                            <p class="text-gray-600 mb-4">Cost-effective container shipping with full-container (FCL) and less-than-container (LCL) options.</p>
+                            <a href="/services/ocean" class="text-primary font-medium flex items-center hover:underline">
+                                Learn more <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-indigo-500 to-indigo-600 flex items-center justify-center">
+                            <i data-feather="airplay" class="w-16 h-16 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Air Freight</h3>
+                            <p class="text-gray-600 mb-4">Express global air cargo with priority handling and customs clearance.</p>
+                            <a href="/services/air" class="text-primary font-medium flex items-center hover:underline">
+                                Learn more <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="http://static.photos/technology/1024x576/10" alt="Digital Logistics Platform" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Smart Logistics Technology</h2>
+                        <p class="text-gray-600 mb-8">Our proprietary digital platform gives you full visibility and control over your shipments with predictive analytics and AI-powered route optimization.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-primary/10 p-2 rounded-lg mr-4">
+                                    <i data-feather="bar-chart-2" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-1">Real-time Tracking</h3>
+                                    <p class="text-gray-600">Monitor shipments with live GPS tracking and predictive ETAs</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary/10 p-2 rounded-lg mr-4">
+                                    <i data-feather="cpu" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-1">AI Optimization</h3>
+                                    <p class="text-gray-600">Machine learning algorithms that optimize routes and reduce costs</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-primary/10 p-2 rounded-lg mr-4">
+                                    <i data-feather="shield" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-1">Blockchain Security</h3>
+                                    <p class="text-gray-600">Tamper-proof documentation and smart contracts for secure transactions</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Supply Chain?</h2>
+                <p class="text-xl mb-10 max-w-2xl mx-auto">Get started with a free logistics consultation and discover how we can optimize your operations.</p>
+                <form class="max-w-md mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Enter your email" class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                        <button type="submit" class="bg-yellow-400 text-gray-900 font-bold px-6 py-3 rounded-lg hover:bg-yellow-300 transition duration-300">Get Started</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
